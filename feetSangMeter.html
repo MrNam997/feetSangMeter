@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Chuyển đổi giữa feets và meters</p>
+<br>
+<select id="a">
+    <option value="0.3048">meters</option>;
+    <option value="1">feets</option>;
+
+</select>
+<select id="b">
+    <option value="1">feets</option>;
+    <option value="0.3048">meters</option>;
+</select>
+<input type="number" id="nhap" placeholder="chuyen doi">
+<button onclick="cd()">Chuyển Đổi </button>
+<script>
+
+    function cd() {
+        let c = parseFloat(document.getElementById('a').value);
+        let d = parseFloat(document.getElementById('b').value);
+
+        let so=parseFloat(document.getElementById('nhap').value);
+        let kq = so * d /c;
+        alert(kq);
+    }
+</script>
+</body>
+</html>
